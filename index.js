@@ -56,7 +56,7 @@ app.post("/upload", (req, res) => {
     }
 
     const uploadedImages = req.files.map(
-      (file) => `${req.protocol}://${req.get("host")}/uploads/${file.filename}`
+      (file) => `${req.protocol}://watch-shop-server-kbfd.onrender.com/uploads/${file.filename}`
     );
     res.status(200).json({
       message: "Images successfully uploaded!",
